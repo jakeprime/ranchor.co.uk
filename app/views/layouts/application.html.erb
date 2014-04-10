@@ -7,8 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="container">
+    <div class="header">
+      <div class="logo"><%=image_tag 'customLogo.jpeg' %></div>
+      <%= render 'layouts/nav' %>
+    </div>
+    <div class="<%= controller.action_name %>">
+      <%= yield %>
+    </div>
+  </div>
 
-<%= yield %>
 
 </body>
 </html>
