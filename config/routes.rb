@@ -1,14 +1,16 @@
 Site::Application.routes.draw do
 
+
   root "pages#home"
 
   get 'about' => "pages#about"
   get 'events' => "pages#events"
-  get 'books' => "pages#books"
   get 'media' => "pages#media"
   get 'art' => "pages#art"
   get 'music' => "pages#music"
   get 'store' => "pages#store"
+
+  resources :books
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

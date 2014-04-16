@@ -1,0 +1,16 @@
+<h2><%= @book.long_title %></h2>
+<h3><%= @book.sub_title %></h3>
+<div class="two-column clearfix">
+  <div class="column">
+    <div class="heading">Book titles</div>
+    <% @books.each do |book| %>
+      <%= link_to book.short_title, book %><br>
+    <% end %>
+  </div>
+
+  <div class="column">
+    <%= image_tag "/uploads/books/#{@book.image}" %>
+    <%= markdown(@book.description) %>
+  </div>
+</div>
+<%= link_to 'Back', books_path %>

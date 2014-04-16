@@ -1,0 +1,15 @@
+<div class="books">
+  <h2>My Books</h2>
+  <%= image_tag 'writer1-large.jpg', { class: 'bordered' } %>
+
+  <div class="two-column clearfix">
+    <div class="column">
+      <div class="heading">Book titles</div>
+      <% @books.each do |book| %>
+        <%= link_to book.short_title, book %><br>
+      <% end %>
+    </div>
+  </div>
+</div>
+    
+

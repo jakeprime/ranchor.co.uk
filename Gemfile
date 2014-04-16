@@ -32,6 +32,11 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# used to make url slug
+gem "stringex", "~> 2.2.0"
+# render markdown
+gem "redcarpet", "~> 3.1.1"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
