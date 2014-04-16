@@ -27,6 +27,30 @@ p {
   line-height: 20px;
 }
 
+a {
+  text-decoration: none;
+  color: #005596;
+}
+a:hover { text-decoration: underline; }
+
+
+h1 {
+  color: #93584D;
+  font-size: 26px;
+}
+
+h2 {
+  color: #0B5394;
+  font-size: 16px;
+}
+
+.highlight,
+h3 {
+  color: #0B5394;
+  font-size: 13px;
+  font-weight: bold;
+}
+
 .container {
   width: 800px;
   border: solid 1px #357a92;
@@ -53,23 +77,23 @@ nav {
   li {
     display: inline;
     margin-right: 8px;
-    a {
-      text-decoration: none;
-      color: #005596;
-    }
-    a:hover { text-decoration: underline; }
   }
 }
+
+.content {
+  padding: 0 20px 10px 10px ;
+}
+
+img.bordered {
+  border: solid 1px #357a92;
+  background: rgba(0, 0, 0, 0);
+  padding: 5px;
+}
+
 
 .home {
   text-align: center;
   padding: 20px;
-  img {
-    width: 400px;
-    border: solid 1px #357a92;
-    background: rgba(0, 0, 0, 0);
-    padding: 5px;
-  }
 
   .contact {
     margin-top: 10px;
@@ -79,6 +103,8 @@ nav {
 }
 
 .about {
+  h2 { text-align: center; }
+
   .left {
     text-align: center;
     margin-top: 20px;
@@ -88,12 +114,6 @@ nav {
     margin-top: 10px;
     font-size: 12px;
   }
-}
-
-h1 {
-  text-align: center;
-  color: #339;
-  font-size: 16px;
 }
 
 

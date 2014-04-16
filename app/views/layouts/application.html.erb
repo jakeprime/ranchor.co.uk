@@ -12,7 +12,7 @@
       <div class="logo"><%=image_tag 'customLogo.jpeg' %></div>
       <%= render 'layouts/nav' %>
     </div>
-    <div class="<%= controller.action_name %>">
+    <div class="content <%= controller.action_name %>">
       <%= yield %>
     </div>
   </div>
