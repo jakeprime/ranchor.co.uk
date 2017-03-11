@@ -53,3 +53,11 @@ from the Preface by Jai Uttal
 
 Five centuries after Chaitanya gave this simple and profound message to the world, his wisdom was carried to the West by my teacher, A C Bhaktivedanta Swami Prabhupada, in the form of the Hare Krishna movement. Following his inspiration, I have retold this wonderful story in simple language, based on the original biographies of Sri Chaitanya’s contemporaries."
 )
+
+Book.create!(
+  short_title: 'Bhagavad Gita',
+  long_title: 'Bhagavad Gita: Talks Between the Soul and God',
+  external_link: '//http://www.fitzroviapress.com/books/gita.htm'
+)
+  
+  
